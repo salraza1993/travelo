@@ -87,6 +87,7 @@
   white-space: nowrap;
   transition: var(--bs-transition);
   flex-shrink: 0;
+  font-weight: 500;
   
   &-square {
     height: calc(var(--top-strip-height) / 1.5);
@@ -118,12 +119,18 @@
         --bs-btn-hover-bg: var(--bs-primary);
         --bs-btn-hover-border-color: transparent;
       }
+      &:is(.shadow) {
+        &:hover { box-shadow: 0 10px 20px -10px rgba(var(--bs-primary-rgb), .5) !important ;}
+      }
     }
     &--secondary {
       &:hover {
         --bs-btn-hover-color: var(--bs-white);
         --bs-btn-hover-bg: var(--bs-secondary);
         --bs-btn-hover-border-color: transparent;
+      }
+      &:is(.shadow) {
+        &:hover { box-shadow: 0 10px 20px -10px rgba(var(--bs-secondary-rgb), .5) !important ;}
       }
     }
     &--light {
@@ -132,12 +139,18 @@
         --bs-btn-hover-bg: var(--bs-white);
         --bs-btn-hover-border-color: transparent;
       }
+      &:is(.shadow) {
+        &:hover { box-shadow: 0 10px 20px -10px rgba(var(--bs-white-rgb), .5) !important ;}
+      }
     }
     &--dark {
       &:hover {
         --bs-btn-hover-color: var(--bs-white);
         --bs-btn-hover-bg: var(--bs-dark);
         --bs-btn-hover-border-color: transparent;
+      }
+      &:is(.shadow) {
+        &:hover { box-shadow: 0 10px 20px -10px rgba(var(--bs-dark-rgb), .5) !important ;}
       }
     }
   }
@@ -171,6 +184,9 @@
     --bs-btn-hover-color: var(--bs-white);
     --bs-btn-hover-border-color: var(--bs-secondary);
     --bs-btn-hover-bg: var(--bs-secondary);
+    &:is(.shadow) {
+      box-shadow: 0 10px 20px -10px rgba(var(--bs-primary-rgb), .5) !important;
+    }
   }
   &-secondary {
     --bs-btn-color: var(--bs-white);
@@ -179,6 +195,9 @@
     --bs-btn-hover-color: var(--bs-dark);
     --bs-btn-hover-border-color: var(--bs-primary);
     --bs-btn-hover-bg: var(--bs-primary);
+    &:is(.shadow) {
+      box-shadow: 0 10px 20px -10px rgba(var(--bs-secondary-rgb), .5) !important;
+    }
   }
   // &-outline {
   //   &-primary {
@@ -238,6 +257,9 @@
     --bs-btn-bg: var(--bs-gray-200);
     --bs-btn-hover-color: var(--bs-bg-color);
     --bs-btn-hover-bg: var(--bs-text-color);
+    &:is(.shadow) {
+      box-shadow: 0 10px 20px -10px rgba(var(--bs-dark-rgb), .5) !important;
+    }
   }
   // &-dark {
   //   --bs-btn-color: var(--bs-white);

@@ -79,23 +79,22 @@ $(document).ready(function () {
   });
 });
 
-const options = { type: 'multiple', };
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const calendar = new VanillaCalendar('#calendar', options);
-//   calendar.init();
-// });
-
+// ============ [ Dropdowns Begins ] ============ //
+const dropdownBlockButton = document.querySelectorAll('.dropdown-block__button');
 function closeAllDropdownBlocks() {
   const dropdownBlocks = document.querySelectorAll('.dropdown-block');
   dropdownBlocks.forEach(item => {
     item.querySelectorAll('.dropdown-block__data').forEach(subItem => subItem.classList.remove('opened'));
     item.classList.remove('active');
   });
+  dropdownBlockButton.forEach(item => {
+    item.classList.remove('active');
+  });
 }
-
 function openThisDropdownBlock(event) {
+  let this_item = event.target;
   let this_parent = event.target.closest('.dropdown-block');
+  this_parent.querySelector('.dropdown-block__button').classList.toggle('active');
   let dropdownListContainer = this_parent.querySelector('.dropdown-block__data');
   if (dropdownListContainer.classList.contains('opened')) {
     dropdownListContainer.classList.remove('opened');
@@ -109,20 +108,19 @@ function openThisDropdownBlock(event) {
     this_parent.classList.remove('active');
   });
 }
-
-const dropdownBlockButton = document.querySelectorAll('.dropdown-block__button');
 dropdownBlockButton.forEach(button => {
   button.addEventListener('click', function (elem) {
-    elem.stopPropagation();
+    let this_item_parent = elem.target.closest('.dropdown-block');
+    if (!this_item_parent.classList.contains('active')) elem.stopPropagation();
     closeAllDropdownBlocks();
     openThisDropdownBlock(elem)    
   });
 });
+// disabling all dropdowns
+document.addEventListener('click', () => closeAllDropdownBlocks(), false);
+// ============ [ Dropdowns End ] ============ //
 
-document.addEventListener('click', () => {
-  closeAllDropdownBlocks();
-});
-
+// ======= [ Tabs ] ======= //
 const searchTab = document.querySelector('.search-tab');
 const searchTabItems = searchTab.querySelectorAll('.search-tab__list__item');
 const searchTabData = searchTab.querySelectorAll('.search-tab__data');
@@ -138,4 +136,14 @@ searchTabItems.forEach(item => {
     thisItem.classList.add('current');
     itemData_found.classList.add('current');    
   })
-})
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const picker = new easepick.create({
+    element: "#datepicker",
+    css: [
+      "https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css"
+    ],
+    zIndex: 10
+  });
+}, false);

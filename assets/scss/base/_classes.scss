@@ -28,16 +28,16 @@
 
 
 .bg {
-  &--primary { background-color: var(--base-primary) !important; }
-  &--secondary { background-color: var(--base-secondary) !important; }
+  &--primary { background-color: var(--bs-primary) !important; }
+  &--secondary { background-color: var(--bs-secondary) !important; }
 }
 .bg, .text {
-  &--primary, &-primary { color: var(--base-primary) !important; }
-  &--secondary { color: var(--base-secondary) !important; }
+  &--primary, &-primary { color: var(--bs-primary) !important; }
+  &--secondary { color: var(--bs-secondary) !important; }
   &-shadow-none, &-shadow--none { text-shadow: none;}
   &-hover {
-    &--primary:hover { color: var(--base-primary) !important; opacity: 1 !important;}
-    &--secondary:hover { color: var(--base-secondary) !important; opacity: 1 !important;}
+    &--primary:hover { color: var(--bs-primary) !important; opacity: 1 !important;}
+    &--secondary:hover { color: var(--bs-secondary) !important; opacity: 1 !important;}
     &--danger:hover { color: var(--bs-danger) !important; opacity: 1 !important;}
   }
 }
