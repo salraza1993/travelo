@@ -1,0 +1,64 @@
+@mixin fontClasses($family, $weight) {
+  font-family: var(--font-#{$family}) !important;
+  font-weight: $weight !important;
+}
+
+@mixin leanerGradient($firstColor: var(--bs-secondary--dark), $secondColor: var(--bs-primary), $direction: 45deg) {
+  background-image: linear-gradient($direction, $firstColor 60%, $secondColor);
+}
+
+@mixin centerItems() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin objectFit($width: 100%, $height: 100%, $maxWidth: 100%, $maxHeight: 100%, $fit: cover, $position: center) {
+  img {
+    width: $width;
+    height: $height;
+    max-width: $maxWidth;
+    height: $maxHeight;
+    object-fit: $fit;
+    object-position: $position;
+  }
+}
+
+@mixin scrollBar($width: var(--scroll-bar-width), $track: transparent, $thumb: var(--bs-secondary), $pointerEvent: initial) {
+  &::-webkit-scrollbar-track {
+    background: $track;
+    pointer-events: $pointerEvent;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $width;
+    background: transparent;
+    pointer-events: $pointerEvent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $thumb;
+    pointer-events: $pointerEvent;
+    border-radius: 10px;
+  }
+}
+
+@mixin cardShadow() {
+  box-shadow:
+    0px 2.8px 2.2px rgba(0, 0, 0, 0.008),
+    0px 6.7px 5.3px rgba(0, 0, 0, 0.012),
+    0px 12.5px 10px rgba(0, 0, 0, 0.015),
+    0px 22.3px 17.9px rgba(0, 0, 0, 0.018),
+    0px 41.8px 33.4px rgba(0, 0, 0, 0.022),
+    0px 100px 80px rgba(0, 0, 0, 0.03);
+}
+
+@mixin multiline($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

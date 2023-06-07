@@ -1,0 +1,93 @@
+// ========== [ Generating Font classes ] ========== //
+.font {
+  &-inter {
+    font-family: var(--font-inter) !important;
+    $fontWeights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+    @each $font in $fontWeights {
+      &--#{$font} {
+        @include fontClasses(inter, $font);
+      }
+    }
+  }
+  &-playfair {
+    font-family: var(--font-playfair) !important;
+    $fontWeights: 400, 500, 600, 700, 800, 900;
+    @each $font in $fontWeights {
+      &--#{$font} {
+        @include fontClasses(playfair, $font);
+      }
+    }
+  }
+
+  &-size {
+    &--small {
+      font-size: var(--font-size-small);
+    }
+  }
+}
+
+
+.bg {
+  &--primary { background-color: var(--base-primary) !important; }
+  &--secondary { background-color: var(--base-secondary) !important; }
+}
+.bg, .text {
+  &--primary, &-primary { color: var(--base-primary) !important; }
+  &--secondary { color: var(--base-secondary) !important; }
+  &-shadow-none, &-shadow--none { text-shadow: none;}
+  &-hover {
+    &--primary:hover { color: var(--base-primary) !important; opacity: 1 !important;}
+    &--secondary:hover { color: var(--base-secondary) !important; opacity: 1 !important;}
+    &--danger:hover { color: var(--bs-danger) !important; opacity: 1 !important;}
+  }
+}
+
+.z-index {
+  $zIndexes: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+  @each $zIndex in $zIndexes {
+    &--#{$zIndex} {
+      z-index: $zIndex !important;
+    }
+  }
+}
+.no-bg-color { background-color: transparent !important;}
+.color, .text {
+  $types: initial, inherit;
+  @each $type in $types {
+    &--#{$type}, &-#{$type} { 
+      color: $type !important; 
+      &:hover {
+        color: $type !important;
+      }
+    }
+  }
+}
+
+@media (width <= $media-screen--mobile) {
+  .hidden--mobile { display: none !important; }
+  .show--mobile { display: block !important; }
+}
+@media (width < $media-screen--sm) {
+  .hidden--xs { display: none !important; }
+  .show--xs { display: block !important; }
+}
+@media (width >= $media-screen--sm) and (width <= $media-screen--md) {
+  .hidden--sm { display: none !important; }
+  .show--sm { display: block !important; }
+}
+@media (width >= $media-screen--md) and (width <= $media-screen--lg) {
+  .hidden--md { display: none !important; }
+  .show--md { display: block !important; }
+}
+@media (width >= $media-screen--lg) and (width <= $media-screen--xl) {
+  .hidden--lg { display: none !important; }
+  .show--lg { display: block !important; }
+}
+@media (width >= $media-screen--xl) and (width <= $media-screen--xxl) {
+  .hidden--xl { display: none !important; }
+  .show--xl { display: block !important; }
+}
+@media (width >= $media-screen--xxl) {
+  .hidden--xxl { display: none !important; }
+  .show--xxl { display: block !important; }
+}

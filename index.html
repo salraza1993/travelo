@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ======== [ Fonts ] ======== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- ======== [ Font Awesome Icons ] ======== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- ======== [ Bootstrap ] ======== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+  <!-- ======== [ Slick Slider ] ======== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <!-- Plugin CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/light.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/dark.min.css" rel="stylesheet">
+    <!-- Plugin JS -->
+  <!-- ======== [ Custom Styles ] ======== -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Travel | Home</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__top-strip z-index--1">
+      <div class="container">
+        <div class="main-header__top-strip__sub">  
+          <div class="elements--left">
+            <p class="m-0 text-white">
+              Welcome to <a href="javascript:;" class="color--inherit text-decoration-none"><strong>Website.com</strong></a>. &nbsp;
+              <strong class="text--primary">Get up to 20% OFF!</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-header__navbar">
+      <div class="container">
+        <div class="main-header__navbar__sub">
+          <div class="main-header__navbar__logo">
+            <a href="./">
+              <img src="./assets/images/logo.svg" alt="Company Logo" />
+            </a>
+          </div>
+          <nav class="main-header__navigation">
+            <div class="tab-hamburger-menu d-none"><i class="fa-solid fa-bars pe-none"></i></div>
+            <ul class="main-header__navigation__menu">
+              <li class="main-header__navigation__menu__item">
+                <a class="main-header__navigation__menu__item__link" href="./my-trips.html">My Trips</a>
+              </li>
+              <li class="main-header__navigation__menu__item">
+                <a class="main-header__navigation__menu__item__link" href="./packages.html">Packages</a>
+              </li>
+              <li class="main-header__navigation__menu__item">
+                <a class="main-header__navigation__menu__item__link" href="./blog.html">Blog</a>
+              </li>
+              <li class="main-header__navigation__menu__item">
+                <a class="main-header__navigation__menu__item__link" href="./support.html">Support</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="info-clickable-buttons gap-2 mx-2">
+            <button type="button" class="info-clickable-buttons__button">
+              <i class="fa-regular fa-bell"></i>
+            </button>
+          </div>
+          <a href="#" class="btn btn-outline-dark hidden--xs px-4">Sign In</a>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu d-none show--mobile">
+      <div class="mobile-menu__close"><i class="fa-solid fa-arrow-left"></i></div>
+      <div class="mobile-menu__body">
+        <div>
+          <div class="cta-buttons mb-4 flex-wrap d-flex gap-3">
+            <a href="#" class="btn btn-outline-light"><i class="fa-solid fa-user"></i> Sing In</a>
+          </div>
+          <ul class="mobile-menu__nav">
+            <li class="mobile-menu__nav__item">
+              <a class="mobile-menu__nav__item__link" href="./my-trips.html">My Trips</a>
+            </li>
+            <li class="mobile-menu__nav__item">
+              <a class="mobile-menu__nav__item__link" href="./packages.html">Packages</a>
+            </li>
+            <li class="mobile-menu__nav__item">
+              <a class="mobile-menu__nav__item__link" href="./blog.html">Blog</a>
+            </li>
+            <li class="mobile-menu__nav__item">
+              <a class="mobile-menu__nav__item__link" href="./support.html">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__footer">
+          <div class="social-media-container">
+            <h6 class="text-white text-uppercase mb-3">Stay Connected</h6>
+            <ul class="social-media-list">
+              <li class="social-media-list__item"><a class="social-media-list__item--link" href="javascript:;"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="social-media-list__item"><a class="social-media-list__item--link" href="javascript:;"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="social-media-list__item"><a class="social-media-list__item--link" href="javascript:;"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="social-media-list__item"><a class="social-media-list__item--link" href="javascript:;"><i class="fa-brands fa-youtube"></i></a></li>
+              <li class="social-media-list__item"><a class="social-media-list__item--link" href="javascript:;"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="search-tab-sec">
+    <div class="container">
+      <div class="search-tab-sec__container">
+        <div class="search-tab">
+          <div class="search-tab__header">
+            <ul class="search-tab__list">
+              <li id="flights" class="search-tab__list__item">Flights</li>
+              <li id="hotels" class="search-tab__list__item current">Hotels</li>
+              <li id="visa" class="search-tab__list__item">Visa</li>
+              <li id="packages" class="search-tab__list__item">Packages</li>
+              <li id="planner" class="search-tab__list__item">Planner</li>
+            </ul>
+          </div>
+          <div class="search-tab__body">
+            <div id="data-flights" class="search-tab__data">
+              <h1>Flights</h1>
+            </div>
+            <div id="data-hotels" class="search-tab__data current">
+              <div class="row g-2">
+                <div class="col-12 col-lg-6 col-xl-4 col-xxl-6">
+                  <div class="row g-2">
+                    <div class="col-12 col-lg-8">
+                      <div class="search-input-block dropdown-block">
+                        <label for="__searchbar" class="search-input-block__label form-label">Destination</label>
+                        <div class="search-input-block__input dropdown-block__button">
+                          <span class="__icon"><i class="fa-solid fa-map-marker-alt"></i></span>
+                          <input type="email" class="__value" id="__searchbar" placeholder="Enter Destinations">
+                        </div>
+                        <div class="dropdown-block__data aligned--left">
+                          <ul class="list-group list-group-hover--secondary">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                            <li class="list-group-item">A fourth item</li>
+                            <li class="list-group-item">And a fifth one</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="search-input-block">
+                        <label for="__searchbar" class="search-input-block__label form-label">Nationality</label>
+                        <div class="search-input-block__input">
+                          <span class="search-input-block__input__icon"><i class="fa-solid fa-globe-asia"></i></span>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4 col-xxl-6">
+                  <div class="row g-2">
+                    <div class="col-12 col-lg-4">
+                      <div class="search-input-block">
+                        <label for="__searchbar" class="search-input-block__label form-label">Check-in</label>
+                        <div class="search-input-block__input">
+                          <span class="search-input-block__input__icon"><i class="fa-regular fa-calendar"></i></span>
+                          <input type="email" class="form-control" id="__searchbar" placeholder="Select Check-in">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="search-input-block">
+                        <label for="__searchbar" class="search-input-block__label form-label">Check-Out</label>
+                        <div class="search-input-block__input">
+                          <span class="search-input-block__input__icon"><i class="fa-regular fa-calendar"></i></span>
+                          <input type="email" class="form-control" id="__searchbar" placeholder="Select Check-Out">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="search-input-block">
+                        <label for="__searchbar" class="search-input-block__label form-label">Rooms &amp; Guests</label>
+                        <div class="search-input-block__input">
+                          <span class="search-input-block__input__icon"><i class="fa-regular fa-calendar"></i></span>
+                          <input type="email" class="form-control" id="__searchbar" placeholder="Select Check-Out">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="data-visa" class="search-tab__data">Visa</div>
+            <!-- [ Packages ] -->
+            <div id="data-packages" class="search-tab__data">Packages</div>
+            
+            <!-- [ Planners ] -->
+            <div id="data-planner" class="search-tab__data">
+              <div class="row g-2">
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="search-input-block">
+                    <label for="__searchbar" class="search-input-block__label form-label">City</label>
+                    <div class="search-input-block__input">
+                      <span class="search-input-block__input__icon"><i class="fa-solid fa-map-pin"></i></span>
+                      <input type="email" class="form-control" id="__searchbar" placeholder="Enter City Name">
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="search-input-block">
+                    <label for="__searchbar" class="search-input-block__label form-label">Duration</label>
+                    <div class="search-input-block__input">
+                      <span class="search-input-block__input__icon"><i class="fa-solid fa-hourglass-end"></i></span>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>-- Select Duration --</option>
+                        <option value="1">Option One</option>
+                        <option value="2">Option Two</option>
+                        <option value="3">Option Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="search-input-block">
+                    <label for="__searchbar" class="search-input-block__label form-label">Packages</label>
+                    <div class="search-input-block__input">
+                      <span class="search-input-block__input__icon"><i class="fa-solid fa-layer-group"></i></span>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>-- Select Packages --</option>
+                        <option value="1">Option One</option>
+                        <option value="2">Option Two</option>
+                        <option value="3">Option Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2 d-none">
+                  <div class="col-12 col-lg-4">
+                    <div class="search-input-block">
+                      <label for="__searchbar" class="search-input-block__label form-label">Check-in</label>
+                      <div class="search-input-block__input">
+                        <span class="search-input-block__input__icon"><i class="fa-regular fa-calendar"></i></span>
+                        <input type="email" class="form-control" id="__searchbar" placeholder="Select Check-in">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="search-input-block">
+                      <label for="__searchbar" class="search-input-block__label form-label">Check-Out</label>
+                      <div class="search-input-block__input">
+                        <span class="search-input-block__input__icon"><i class="fa-regular fa-calendar"></i></span>
+                        <input type="email" class="form-control" id="__searchbar" placeholder="Select Check-Out">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="search-input-block">
+                      <label for="__searchbar" class="search-input-block__label form-label">Rooms &amp; Guests</label>
+                      <div class="search-input-block__input">
+                        <span class="search-input-block__input__icon"><i class="fa-regular fa-calendar"></i></span>
+                        <input type="email" class="form-control" id="__searchbar" placeholder="Select Check-Out">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-tab__footer"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="packages-sec">
+    <div class="container">
+      <div class="section-heading mb-4">
+        <div class="section-heading__content --left">
+          <h2 class="__heading m-0">Trending Packages</h2>
+        </div>
+        <div class="section-heading__content --right">
+          <a href="javascript:;" class="btn btn-gray btn-lg btn-hover--secondary btn-inline">
+            View All Packages
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="packages-sec__container">
+        <div class="row g-3">
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="package-card">
+              <div class="package-card__thumbnail">
+                <div class="package-card__thumbnail__image">
+                  <img src="./assets/images/package-image.jpg" alt="Package Thumbnail" />
+                </div>
+                <div class="wish-list-icon"><i class="fa-solid fa-heart"></i></div>
+                <ul class="package-card__tags">
+                  <li class="package-card__tags__tag"><a href="javascript:;">Best Seller</a></li>
+                </ul>
+              </div>
+              <div class="package-card__content">
+                <h3 class="__heading">Venice, Rome and Milan – 9 Days 8 Nights</h3>
+                <div class="package-card__content__footer">
+                  <div class="price-info">
+                    <small>Starting from</small>
+                    <h4>AED 1950</h4>
+                  </div>
+                  <a href="javascript:;" class="btn btn-primary btn-lg">View Package</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="special-block-sec">
+    <div class="container">
+      <div class="special-block-sec__container" style="background-image: url('./assets/images/video-section-bg-image.jpg');">
+        <div class="special-block-sec__container__content">
+          <h2 class="__heading">The Best Time to Book Summer</h2>
+          <p class="__paragraph">Plan now to save 20% or more with Member Prices at select hotels. Your summer adventure is waiting.</p>
+          <a href="javascript:;" class="btn btn-lg btn-primary btn-inline text-shadow--none">Know More about the Package</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="explore-adventure-sec">
+    <div class="container">
+      <div class="section-heading mb-4">
+        <div class="section-heading__content --left">
+          <h2 class="__heading m-0">Explore, discover, and save</h2>
+        </div>
+        <div class="section-heading__content --right">
+          <a href="javascript:;" class="btn btn-gray btn-lg btn-hover--secondary btn-inline">
+            Explore More
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="adventure-cards">
+        <div class="row g-4">
+          <div class="col-12 col-lg-12 col-xl-8 d-flex">
+            <div class="row g-4">
+              <div class="col-12 col-lg-4 col-xl-12">
+                <div class="adventure-cards__card max-height">
+                  <div class="adventure-cards__card__image">
+                    <img src="./assets/images/adventure-image.jpg" alt="Adventure Image">
+                  </div>
+                  <div class="adventure-cards__card__content">
+                    <div class="adventure-cards__card__content--cta"><i class="fa-solid fa-arrow-right"></i></div>
+                    <h2 class="__heading"><a href="javascript:;">Tent Camping</a></h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xl-6">
+                <div class="adventure-cards__card max-height">
+                  <div class="adventure-cards__card__image">
+                    <img src="./assets/images/adventure-image.jpg" alt="Adventure Image">
+                  </div>
+                  <div class="adventure-cards__card__content">
+                    <div class="adventure-cards__card__content--cta"><i class="fa-solid fa-arrow-right"></i></div>
+                    <h2 class="__heading"><a href="javascript:;">Tent Camping</a></h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xl-6">
+                <div class="adventure-cards__card max-height">
+                  <div class="adventure-cards__card__image">
+                    <img src="./assets/images/adventure-image.jpg" alt="Adventure Image">
+                  </div>
+                  <div class="adventure-cards__card__content">
+                    <div class="adventure-cards__card__content--cta"><i class="fa-solid fa-arrow-right"></i></div>
+                    <h2 class="__heading"><a href="javascript:;">Tent Camping</a></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-12 col-xl-4 d-flex">
+            <div class="adventure-cards__card">
+              <div class="adventure-cards__card__image">
+                <img src="./assets/images/adventure-image.jpg" alt="Adventure Image">
+              </div>
+              <div class="adventure-cards__card__content">
+                <div class="adventure-cards__card__content--cta"><i class="fa-solid fa-arrow-right"></i></div>
+                <h2 class="__heading"><a href="javascript:;">Tent Camping</a></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-sec">
+    <div class="container p-0">
+      <div class="newsletter-sec__container">
+        <div class="newsletter-sec__container__content">
+          <div class="newsletter-sec__container__content--left">
+            <div class="subscribe-container">
+              <h2 class="text-primary my-2 font-playfair--700 fs-1">Newsletter</h2>
+              <p>Subscribe our newsletter to get <span class="text-primary">Our Latest Updates &amp; News</span></p>
+              <div class="subscribe-container__form">
+                <form action="" method="post" class="subscribe-container__form__input-block m-0">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  <button class="btn btn-primary">
+                    <i class="fa-solid fa-envelope"></i>
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="newsletter-sec__container__content--right">
+            <div class="social-media-container">
+              <h2 class="text-primary my-2 font-playfair--700 fs-1">Follow Us</h2>
+              <p>Curabitur blandit tempus porttitor. Curabitur blandit.</p>
+              <ul class="social-media-list">
+                <li class="social-media-list__item">
+                  <a href="javascript:;" class="social-media-list__item--link"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="social-media-list__item">
+                  <a href="javascript:;" class="social-media-list__item--link"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="social-media-list__item">
+                  <a href="javascript:;" class="social-media-list__item--link"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="social-media-list__item">
+                  <a href="javascript:;" class="social-media-list__item--link"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="social-media-list__item">
+                  <a href="javascript:;" class="social-media-list__item--link"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="main-footer-logo d-flex justify-content-center border-bottom mb-4 pb-3">
+        <a href="/." class="text-uppercase fw-bold text-decoration-none text--inherit d-inline-flex flex-column">
+          <img src="./assets/images/logo.svg" alt="Footer Logo" class="mb-2" />
+          <small class="">Tag Line goes here</small>
+        </a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-5 col-lg-3 col-xl-2">
+          <div class="main-footer__content">
+            <h6 class="text-primary mb-3 fw-bold">Company</h6>
+            <ul class="main-footer__content__links">
+              <li class="main-footer__content__links__item"><a href="javascript:;">About</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Jobs</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">List your property</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Partnerships</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Investor Relations</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Advertising</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 col-xl-4">
+          <div class="main-footer__content">
+            <h6 class="text-primary mb-3 fw-bold">Explore</h6>
+            <ul class="main-footer__content__links">
+              <li class="main-footer__content__links__item"><a href="javascript:;">United States of America travel guide</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Hotels in United States of America</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Vacation rentals in United States of America</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Vacation packages in United States of America</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Domestic flights</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Car rentals in United States of America</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">All accommodation types</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-3 col-xl-3">
+          <div class="main-footer__content">
+            <h6 class="text-primary mb-3 fw-bold">Policies</h6>
+            <ul class="main-footer__content__links">
+              <li class="main-footer__content__links__item"><a href="javascript:;">Privacy</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Terms of use</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Terms and conditions</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Accessibility</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Your Privacy Choices</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 col-lg-12 col-xl-3">
+          <div class="main-footer__content">
+            <h6 class="text-primary mb-3 fw-bold">Help!</h6>
+            <ul class="main-footer__content__links">
+              <li class="main-footer__content__links__item"><a href="javascript:;">Support</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Cancel your hotel or vacation rental booking</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Cancel your flight</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Refund timelines, policies & processes</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Use an Expedia coupon</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">International travel documents</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights">
+        <div class="copyrights__links">
+          <p class="m-0">Copyright © Portal name. All Rights Reserved</p>
+          <span class="opacity-50">&nbsp;|&nbsp;</span>
+          <a href="#">Privacy Policy</a>
+          <span class="opacity-50">&nbsp;|&nbsp;</span>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="payment-methods">
+          <img src="./assets/images/payment-methods.svg" alt="Payment Method Icons" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.js" defer></script> -->
+  <script type="text/javascript"src="./assets/js/custom.js"></script>
+</body>
+</html>
