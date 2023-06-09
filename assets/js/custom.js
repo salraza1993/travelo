@@ -132,10 +132,10 @@ searchTabItems.forEach(item => {
     
     searchTabItems.forEach(tabData => tabData.classList.remove('current'))
     searchTabData.forEach(tabItem => tabItem.classList.remove('current'))
-    let itemData_found = document.querySelector(`#data-${thisItemId}`);
+    let itemData_found = searchTab.querySelector(`#data-${thisItemId}`);
     thisItem.classList.add('current');
     itemData_found.classList.add('current');    
-  })
+  }, false)
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -147,3 +147,19 @@ document.addEventListener("DOMContentLoaded", function () {
     zIndex: 10
   });
 }, false);
+
+// ============ [ flight tabs ] ============ //
+const flightTabsContainer = document.querySelector('.flight-tabs');
+const flightTabs = flightTabsContainer.querySelectorAll('.flight-tabs__header__tab');
+const flightTabsData = flightTabsContainer.querySelectorAll('.flight-tabs__data__list');
+
+flightTabs.forEach(flightTab => {
+  flightTab.addEventListener('click', event => {
+    const thisItem_id = event.target.id;
+    flightTabs.forEach(tab => tab.classList.remove('active'));
+    flightTabsData.forEach(tabData => tabData.classList.remove('selected'));
+    const flightTab_data = flightTabsContainer.querySelector(`#data-${thisItem_id}`);
+    event.target.classList.add('active');
+    flightTab_data.classList.add('selected');
+  }, false);
+});

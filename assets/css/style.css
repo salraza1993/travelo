@@ -1143,6 +1143,11 @@ img, svg, video {
   font-size: 1.35rem;
   font-weight: 700;
 }
+@media (width < 767px) {
+  .search-tab-sec__container .search-tab .search-button .btn {
+    width: 100%;
+  }
+}
 @media (width < 1400px) and (width > 1200px) {
   .search-tab-sec .container {
     max-width: 97vw;
@@ -1160,7 +1165,7 @@ img, svg, video {
   gap: 1rem;
   list-style: none;
   margin: 0 0 1rem;
-  padding: 0;
+  padding: 0 0 0 1rem;
   cursor: pointer;
 }
 .flight-tabs__header__tab {
@@ -1177,13 +1182,37 @@ img, svg, video {
 .flight-tabs__header__tab.active {
   font-weight: 700;
 }
+@media (width < 576px) {
+  .flight-tabs__header {
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 0.25rem;
+    padding-inline: 10vw;
+  }
+}
+.flight-tabs__data {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.flight-tabs__data__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.flight-tabs__data__list:not(.current, .selected) {
+  display: none;
+}
 
 .additional-fields {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0.5rem;
   z-index: 1;
   gap: 0.6rem;
 }

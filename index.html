@@ -131,60 +131,294 @@
             <div id="data-flights" class="search-tab__data current">
               <div class="flight-tabs">
                 <ul class="flight-tabs__header">
-                  <li class="flight-tabs__header__tab" id="flightTab-roundtrip">Roundtrip</li>
-                  <li class="flight-tabs__header__tab active" id="flightTab-oneway">Oneway</li>
+                  <li class="flight-tabs__header__tab active" id="flightTab-roundtrip">Roundtrip</li>
+                  <li class="flight-tabs__header__tab" id="flightTab-oneway">Oneway</li>
                   <li class="flight-tabs__header__tab" id="flightTab-multiCity">Multi-city</li>
                 </ul>
                 <div class="flight-tabs__data">
-                  <div id="flight-tabs__data" class="row g-3">
-                    <div class="col-12 col-xl-7">
-                      <div class="row g-2">
-                        <div class="col-12 col-lg-6">
-                          <div class="search-input-block dropdown-block">
-                            <label for="__searchbar" class="search-input-block__label form-label">Origin</label>
-                            <div class="search-input-block__input dropdown-block__button">
-                              <span class="__icon --before"><i class="fa-solid fa-plane-departure"></i></span>
-                              <div class="__value">
-                                <input type="email" class="__value" id="__searchbar" placeholder="Enter Origin">
+                  <div class="flight-tabs__data__list selected" id="data-flightTab-roundtrip">
+                    <div class="row g-2">
+                      <div class="col-12 col-xl-7">
+                        <div class="row g-2">
+                          <div class="col-12 col-md-6">
+                            <div class="search-input-block dropdown-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Origin</label>
+                              <div class="search-input-block__input dropdown-block__button">
+                                <span class="__icon --before"><i class="fa-solid fa-plane-departure"></i></span>
+                                <div class="__value">
+                                  <input type="email" class="__value" id="__searchbar" placeholder="Enter Origin">
+                                </div>
+                              </div>
+                              <div class="dropdown-block__data aligned--left">
+                                <ul class="list-group list-group-hover--secondary">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">A fourth item</li>
+                                  <li class="list-group-item">And a fifth one</li>
+                                </ul>
                               </div>
                             </div>
-                            <div class="dropdown-block__data aligned--left">
-                              <ul class="list-group list-group-hover--secondary">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="search-input-block dropdown-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Destination</label>
+                              <div class="search-input-block__input dropdown-block__button">
+                                <span class="__icon --before"><i class="fa-solid fa-plane-arrival"></i></span>
+                                <div class="__value">
+                                  <input type="email" class="__value" id="__searchbar" placeholder="Enter Destination">
+                                </div>
+                              </div>
+                              <div class="dropdown-block__data aligned--left">
+                                <ul class="list-group list-group-hover--secondary">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">A fourth item</li>
+                                  <li class="list-group-item">And a fifth one</li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-12 col-lg-6">
-                          <div class="search-input-block dropdown-block">
-                            <label for="__searchbar" class="search-input-block__label form-label">Destination</label>
-                            <div class="search-input-block__input dropdown-block__button">
-                              <span class="__icon --before"><i class="fa-solid fa-plane-arrival"></i></span>
-                              <div class="__value">
-                                <input type="email" class="__value" id="__searchbar" placeholder="Enter Destination">
+                      </div>
+                      <div class="col-12 col-xl-5">
+                        <div class="row g-2">
+                          <div class="col-12 col-md-6">
+                            <div class="search-input-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Departing On</label>
+                              <div class="search-input-block__input">
+                                <span class="__icon --before"><i class="fa-regular fa-calendar"></i></span>
+                                <div class="__value">
+                                  <input type="email" class="__value" id="#datepicker" placeholder="Check-in Date">
+                                </div>
                               </div>
                             </div>
-                            <div class="dropdown-block__data aligned--left">
-                              <ul class="list-group list-group-hover--secondary">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="search-input-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Return</label>
+                              <div class="search-input-block__input">
+                                <span class="__icon --before"><i class="fa-regular fa-calendar"></i></span>
+                                <div class="__value">
+                                  <input type="email" class="__value" id="#datepicker" placeholder="Return Date">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="col-12 col-lg-4 d-none">
+                            <div class="search-input-block travelers-info dropdown-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Rooms &amp; Guests</label>
+                              <div class="search-input-block__input dropdown-block__button">
+                                <div class="__value">
+                                  <small>01 Room</small>, <small>01 Guest</small>
+                                </div>
+                                <span class="__icon --after"><i class="fa-solid fa-ellipsis-v"></i></span>
+                              </div>
+                              <div class="dropdown-block__data aligned--right">
+                                <div class="travelers-entries">
+                                  <h5 class="fw-bold mb-3 text--secondary">Travelers</h5>
+                                  <div class="travelers-entries__block">
+                                    <div class="mb-2 d-flex gap-3 align-items-center">
+                                      <h6 class="m-0 flex-shrink-0">Room - 1</h6>
+                                      <hr class="w-100 m-0">
+                                    </div>
+                                    <div class="travelers-entries__block__content">
+                                      <div class="travelers-entries__block__content__list">
+                                        <small class="__label">Adult(s)</small>
+                                        <div class="controllers">
+                                          <button class="controllers__button"><i class="fa-solid fa-minus"></i></button>
+                                          <div class="controllers__value">10</div>
+                                          <button class="controllers__button"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                      </div>
+                                      <div class="travelers-entries__block__content__list">
+                                        <small class="__label">Children</small>
+                                        <div class="controllers">
+                                          <button class="controllers__button"><i class="fa-solid fa-minus"></i></button>
+                                          <div class="controllers__value">10</div>
+                                          <button class="controllers__button"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                      </div>                              
+                                    </div>
+                                  </div>
+                                  <button class="ms-auto mb-3 btn btn-sm btn-gray btn-hover--secondary">Add Another Room</button>
+                                  <button class="btn w-100 btn-secondary btn-hover--primary">Apply Changes</button>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-xl-5">
-                      <div class="row g-2">
-                        <div class="col-12 col-md-6">
-                          <div class="search-input-block">
+                  </div>
+                  <div class="flight-tabs__data__list" id="data-flightTab-oneway">
+                    <div class="row g-2">
+                      <div class="col-12 col-lg-8">
+                        <div class="row g-2">
+                          <div class="col-12 col-md-6">
+                            <div class="search-input-block dropdown-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Origin</label>
+                              <div class="search-input-block__input dropdown-block__button">
+                                <span class="__icon --before"><i class="fa-solid fa-plane-departure"></i></span>
+                                <div class="__value">
+                                  <input type="email" class="__value" id="__searchbar" placeholder="Enter Origin">
+                                </div>
+                              </div>
+                              <div class="dropdown-block__data aligned--left">
+                                <ul class="list-group list-group-hover--secondary">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">A fourth item</li>
+                                  <li class="list-group-item">And a fifth one</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="search-input-block dropdown-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Destination</label>
+                              <div class="search-input-block__input dropdown-block__button">
+                                <span class="__icon --before"><i class="fa-solid fa-plane-arrival"></i></span>
+                                <div class="__value">
+                                  <input type="email" class="__value" id="__searchbar" placeholder="Enter Destination">
+                                </div>
+                              </div>
+                              <div class="dropdown-block__data aligned--left">
+                                <ul class="list-group list-group-hover--secondary">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">A fourth item</li>
+                                  <li class="list-group-item">And a fifth one</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="search-input-block">
+                          <label for="__searchbar" class="search-input-block__label form-label">Departing On</label>
+                          <div class="search-input-block__input">
+                            <span class="__icon --before"><i class="fa-regular fa-calendar"></i></span>
+                            <div class="__value">
+                              <input type="email" class="__value" id="#datepicker" placeholder="Check-in Date">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flight-tabs__data__list" id="data-flightTab-multiCity">
+                    <div class="row g-2">
+                      <div class="col-12 col-lg-8">
+                        <div class="row g-2">
+                          <div class="col-12 col-md-6">
+                            <div class="search-input-block dropdown-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Origin</label>
+                              <div class="search-input-block__input dropdown-block__button">
+                                <span class="__icon --before"><i class="fa-solid fa-plane-departure"></i></span>
+                                <div class="__value">
+                                  <input type="email" class="__value" id="__searchbar" placeholder="Enter Origin">
+                                </div>
+                              </div>
+                              <div class="dropdown-block__data aligned--left">
+                                <ul class="list-group list-group-hover--secondary">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">A fourth item</li>
+                                  <li class="list-group-item">And a fifth one</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="search-input-block dropdown-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Destination</label>
+                              <div class="search-input-block__input dropdown-block__button">
+                                <span class="__icon --before"><i class="fa-solid fa-plane-arrival"></i></span>
+                                <div class="__value">
+                                  <input type="email" class="__value" id="__searchbar" placeholder="Enter Destination">
+                                </div>
+                              </div>
+                              <div class="dropdown-block__data aligned--left">
+                                <ul class="list-group list-group-hover--secondary">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">A fourth item</li>
+                                  <li class="list-group-item">And a fifth one</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="search-input-block">
+                          <label for="__searchbar" class="search-input-block__label form-label">Departing On</label>
+                          <div class="search-input-block__input">
+                            <span class="__icon --before"><i class="fa-regular fa-calendar"></i></span>
+                            <div class="__value">
+                              <input type="email" class="__value" id="#datepicker" placeholder="Check-in Date">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row g-2">
+                      <hr class="show--xs d-none mb-0" />
+                      <div class="col-12 col-lg-8">
+                        <div class="row g-2">
+                          <div class="col-12 col-md-6">
+                            <div class="search-input-block dropdown-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Origin</label>
+                              <div class="search-input-block__input dropdown-block__button">
+                                <span class="__icon --before"><i class="fa-solid fa-plane-departure"></i></span>
+                                <div class="__value">
+                                  <input type="email" class="__value" id="__searchbar" placeholder="Enter Origin">
+                                </div>
+                              </div>
+                              <div class="dropdown-block__data aligned--left">
+                                <ul class="list-group list-group-hover--secondary">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">A fourth item</li>
+                                  <li class="list-group-item">And a fifth one</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="search-input-block dropdown-block">
+                              <label for="__searchbar" class="search-input-block__label form-label">Destination</label>
+                              <div class="search-input-block__input dropdown-block__button">
+                                <span class="__icon --before"><i class="fa-solid fa-plane-arrival"></i></span>
+                                <div class="__value">
+                                  <input type="email" class="__value" id="__searchbar" placeholder="Enter Destination">
+                                </div>
+                              </div>
+                              <div class="dropdown-block__data aligned--left">
+                                <ul class="list-group list-group-hover--secondary">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">A fourth item</li>
+                                  <li class="list-group-item">And a fifth one</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="d-flex align-items-end gap-2">
+                          <div class="search-input-block flex-fill">
                             <label for="__searchbar" class="search-input-block__label form-label">Departing On</label>
                             <div class="search-input-block__input">
                               <span class="__icon --before"><i class="fa-regular fa-calendar"></i></span>
@@ -193,67 +427,22 @@
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                          <div class="search-input-block">
-                            <label for="__searchbar" class="search-input-block__label form-label">Return</label>
-                            <div class="search-input-block__input">
-                              <span class="__icon --before"><i class="fa-regular fa-calendar"></i></span>
-                              <div class="__value">
-                                <input type="email" class="__value" id="#datepicker" placeholder="Return Date">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <div class="col-12 col-lg-4 d-none">
-                          <div class="search-input-block travelers-info dropdown-block">
-                            <label for="__searchbar" class="search-input-block__label form-label">Rooms &amp; Guests</label>
-                            <div class="search-input-block__input dropdown-block__button">
-                              <div class="__value">
-                                <small>01 Room</small>, <small>01 Guest</small>
-                              </div>
-                              <span class="__icon --after"><i class="fa-solid fa-ellipsis-v"></i></span>
-                            </div>
-                            <div class="dropdown-block__data aligned--right">
-                              <div class="travelers-entries">
-                                <h5 class="fw-bold mb-3 text--secondary">Travelers</h5>
-                                <div class="travelers-entries__block">
-                                  <div class="mb-2 d-flex gap-3 align-items-center">
-                                    <h6 class="m-0 flex-shrink-0">Room - 1</h6>
-                                    <hr class="w-100 m-0">
-                                  </div>
-                                  <div class="travelers-entries__block__content">
-                                    <div class="travelers-entries__block__content__list">
-                                      <small class="__label">Adult(s)</small>
-                                      <div class="controllers">
-                                        <button class="controllers__button"><i class="fa-solid fa-minus"></i></button>
-                                        <div class="controllers__value">10</div>
-                                        <button class="controllers__button"><i class="fa-solid fa-plus"></i></button>
-                                      </div>
-                                    </div>
-                                    <div class="travelers-entries__block__content__list">
-                                      <small class="__label">Children</small>
-                                      <div class="controllers">
-                                        <button class="controllers__button"><i class="fa-solid fa-minus"></i></button>
-                                        <div class="controllers__value">10</div>
-                                        <button class="controllers__button"><i class="fa-solid fa-plus"></i></button>
-                                      </div>
-                                    </div>                              
-                                  </div>
-                                </div>
-                                <button class="ms-auto mb-3 btn btn-sm btn-gray btn-hover--secondary">Add Another Room</button>
-                                <button class="btn w-100 btn-secondary btn-hover--primary">Apply Changes</button>
-                              </div>
-                            </div>
-                          </div>
+                          <button class="btn btn-danger btn-lg mb-1">
+                            <i class="fa-solid fa-trash"></i>
+                            <span class="hidden--lg hidden--xs">Delete</span>
+                          </button>
                         </div>
                       </div>
                     </div>
+                    <button class="btn btn-gray btn-hover--secondary ms-auto">
+                      <i class="fa-solid fa-plus"></i>
+                      Add Another Flight
+                    </button>
                   </div>
                 </div>
               </div>
-              <div class="additional-fields mt-2">
+              <hr />
+              <div class="additional-fields">
                 <div class="additional-fields__block-left">
                   <div class="form-check custom-form-check">
                     <input class="form-check-input" type="checkbox" value="" id="directFlight">
