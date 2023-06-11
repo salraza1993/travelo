@@ -14,6 +14,7 @@
 }
 
 @mixin objectFit($width: 100%, $height: 100%, $maxWidth: 100%, $maxHeight: 100%, $fit: cover, $position: center) {
+  overflow: hidden;
   img {
     width: $width;
     height: $height;

@@ -56,7 +56,7 @@ $(document).ready(function () {
     nextArrow: $('.slider-arrows__button--right'),
   });
 
-  $('.top-deals-cards-slider').slick({
+  $('.package-card-slider').slick({
     infinite: true,
     variableWidth: true,
     slidesToShow: 1,
