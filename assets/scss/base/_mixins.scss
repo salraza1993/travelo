@@ -63,3 +63,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+@mixin fontAwesome($type: 900) {
+  font-family: "Font Awesome 6 Free";
+  @if $type =='400' { font-weight: 400; }
+  @else { font-weight: 900; }
+}

@@ -30,6 +30,8 @@ $media-screen--xxl-container: 1320px;
   --bs-transition: all 0.3s ease-in-out;
   --main-header-height: 110px;
   --top-strip-height: calc(var(--main-header-height) / 2.65);
+  --input-height: 45px;
+  --input-border-color: var(--bs-border-color);
   
   --bs-border-radius: 0.35rem;
   --bs-transparent: transparent;
@@ -56,7 +58,9 @@ $media-screen--xxl-container: 1320px;
   --font-size--2: var(--fs--2);
   --font-size--4: var(--fs--4);
   --font-size--5: var(--fs--5);
-  --font-size--6: var(--fs--6)}
+  --font-size--6: var(--fs--6)
+
+}
 
 
 @media (width < $media-screen--xl) {
