@@ -124,9 +124,9 @@ document.addEventListener('click', () => closeAllDropdownBlocks(), false);
 
 // ======= [ Tabs ] ======= //
 const searchTab = document.querySelector('.search-tab');
-const searchTabItems = searchTab.querySelectorAll('.search-tab__list__item');
-const searchTabData = searchTab.querySelectorAll('.search-tab__data');
-searchTabItems.forEach(item => {
+const searchTabItems = searchTab?.querySelectorAll('.search-tab__list__item');
+const searchTabData = searchTab?.querySelectorAll('.search-tab__data');
+searchTabItems?.forEach(item => {
   item.addEventListener('click', e => {
     e.preventDefault();
     let thisItem = e.target;
@@ -140,22 +140,22 @@ searchTabItems.forEach(item => {
   }, false)
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const picker = new easepick.create({
-    element: "#datepicker",
-    css: [
-      "https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css"
-    ],
-    zIndex: 10
-  });
-}, false);
+// document.addEventListener("DOMContentLoaded", function () {
+//   const picker = new easepick.create({
+//     element: "#datepicker",
+//     css: [
+//       "https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css"
+//     ],
+//     zIndex: 10
+//   });
+// }, false);
 
 // ============ [ flight tabs ] ============ //
 const flightTabsContainer = document.querySelector('.flight-tabs');
-const flightTabs = flightTabsContainer.querySelectorAll('.flight-tabs__header__tab');
-const flightTabsData = flightTabsContainer.querySelectorAll('.flight-tabs__data__list');
+const flightTabs = flightTabsContainer?.querySelectorAll('.flight-tabs__header__tab');
+const flightTabsData = flightTabsContainer?.querySelectorAll('.flight-tabs__data__list');
 
-flightTabs.forEach(flightTab => {
+flightTabs?.forEach(flightTab => {
   flightTab.addEventListener('click', event => {
     const thisItem_id = event.target.id;
     flightTabs.forEach(tab => tab.classList.remove('active'));
@@ -165,3 +165,32 @@ flightTabs.forEach(flightTab => {
     flightTab_data.classList.add('selected');
   }, false);
 });
+
+
+// ========== [ gallery overlay ] ========== //
+const galleryItems = document?.querySelectorAll('.package-details__gallery__item');
+const galleryOverlay = document?.querySelector('.gallery-overlay-sec');
+const galleryImageContainer = document?.querySelector('.gallery-overlay-image');
+const showGalleryButton = document?.querySelector('.show-gallery');
+const hideGalleryButton = document?.querySelector('.close-button');
+
+// ========= [ Show Gallery ] ========= //
+function showGalleryImage(item) {
+  item.addEventListener('click', (elem) => {
+    let this_item_img = elem.target.querySelector('img').getAttribute('src');
+    galleryImageContainer.setAttribute('src', this_item_img);
+    galleryOverlay.style.display = 'block';
+  }, false);
+
+}
+galleryItems?.forEach(item => showGalleryImage(item));
+galleryImageContainer.addEventListener('click', e => e.stopImmediatePropagation());
+
+// ========= [ Hide Gallery ] ========= //
+function hideGalleryImage() {
+  galleryImageContainer.setAttribute('src', '');
+  galleryOverlay.style.display = 'none';
+}
+
+hideGalleryButton?.addEventListener('click', e => hideGalleryImage());
+galleryOverlay.addEventListener('click', e => hideGalleryImage());

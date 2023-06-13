@@ -46,8 +46,19 @@ $media-screen--xxl-container: 1320px;
   --font-size-small: 0.9rem;
   --font-inter: 'Inter', sans-serif;
   --font--inter: var(--font-inter);
-  --font-playfair: 'Playfair Display', serif;
+  --font-playfair: 'Playfair', sans-serif;
   --font--playfair: var(--font-playfair);
+
+  --font-centra2: 'Centra No2 Book';
+  --font-centra2-book: 'Centra No2 Book';
+  --font-centra2-hairline: 'Centra No2 Hairline';
+  --font-centra2-thin: 'Centra No2 Thin';
+  --font-centra2-light: 'Centra No2 Light';
+  --font-centra2-medium: 'Centra No2 medium';
+  --font-centra2-bold: 'Centra No2 Bold';
+  --font-centra2-black: 'Centra No2 Black';
+  --font-centra2-extrabold: 'Centra No2 Extrabold';
+  
   --fs--1: 2.5rem;
   --fs--2: 2rem;
   --fs--3: 1.75rem;
@@ -90,5 +101,12 @@ $media-screen--xxl-container: 1320px;
 @media (width < $media-screen--sm) {
   :root {
     --remain-viewport-side-width: 0;
+  }
+}
+@media (width < $media-screen--mobile) {
+  :root {
+    --font-size--1: var(--fs--2);
+    --font-size--2: var(--fs--3);
+    --mobile-padding-x: 5vw;
   }
 }

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Centra No2 Medium';
+    src: url('CentraNo2-Medium.woff2') format('woff2'),
+        url('CentraNo2-Medium.woff') format('woff'),
+        url('CentraNo2-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No2 Thin';
+    src: url('CentraNo2-Thin.woff2') format('woff2'),
+        url('CentraNo2-Thin.woff') format('woff'),
+        url('CentraNo2-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No2 Light';
+    src: url('CentraNo2-Light.woff2') format('woff2'),
+        url('CentraNo2-Light.woff') format('woff'),
+        url('CentraNo2-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No2 Extrabold';
+    src: url('CentraNo2-Extrabold.woff2') format('woff2'),
+        url('CentraNo2-Extrabold.woff') format('woff'),
+        url('CentraNo2-Extrabold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No2 Book';
+    src: url('CentraNo2-Book.woff2') format('woff2'),
+        url('CentraNo2-Book.woff') format('woff'),
+        url('CentraNo2-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No2 Hairline';
+    src: url('CentraNo2-Hairline.woff2') format('woff2'),
+        url('CentraNo2-Hairline.woff') format('woff'),
+        url('CentraNo2-Hairline.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No2 Bold';
+    src: url('CentraNo2-Bold.woff2') format('woff2'),
+        url('CentraNo2-Bold.woff') format('woff'),
+        url('CentraNo2-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No2 Black';
+    src: url('CentraNo2-Black.woff2') format('woff2'),
+        url('CentraNo2-Black.woff') format('woff'),
+        url('CentraNo2-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

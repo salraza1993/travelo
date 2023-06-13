@@ -4,7 +4,7 @@
     font-family: var(--font-inter) !important;
     $fontWeights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
     @each $font in $fontWeights {
-      &--#{$font} {
+      &--#{$font}, &-#{$font} {
         @include fontClasses(inter, $font);
       }
     }
@@ -13,8 +13,17 @@
     font-family: var(--font-playfair) !important;
     $fontWeights: 400, 500, 600, 700, 800, 900;
     @each $font in $fontWeights {
-      &--#{$font} {
+      &--#{$font}, &-#{$font} {
         @include fontClasses(playfair, $font);
+      }
+    }
+  }
+  &-centra2 {
+    font-family: var(--font-centra2) !important;
+    $fontWeights: 'book', 'hairline', 'thin', 'light', 'medium', 'bold', 'black', 'extrabold';
+    @each $font in $fontWeights {
+      &--#{$font}, &-#{$font} {
+        font-family: var(--font-centra2-#{$font});
       }
     }
   }
@@ -26,7 +35,7 @@
   }
 }
 
-
+.line-height--normal, line-height-normal { line-height: normal; }
 .bg {
   &--primary { background-color: var(--bs-primary) !important; }
   &--secondary { background-color: var(--bs-secondary) !important; }
@@ -61,6 +70,19 @@
       }
     }
   }
+}
+
+.max-width {
+  &--10 { max-width: 10% !important; }
+  &--20 { max-width: 20% !important; }
+  &--30 { max-width: 30% !important; }
+  &--40 { max-width: 40% !important; }
+  &--50 { max-width: 50% !important; }
+  &--60 { max-width: 60% !important; }
+  &--70 { max-width: 70% !important; }
+  &--80 { max-width: 80% !important; }
+  &--90 { max-width: 90% !important; }
+  &--100 { max-width: 100% !important; }
 }
 
 @media (width <= $media-screen--mobile) {

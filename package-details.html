@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ======== [ Fonts ] ======== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- ======== [ Font Awesome Icons ] ======== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- ======== [ Bootstrap ] ======== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+  <!-- ======== [ Slick Slider ] ======== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <!-- Plugin CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/light.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/dark.min.css" rel="stylesheet">
+    <!-- Plugin JS -->
+  <!-- ======== [ Custom Styles ] ======== -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Travel | Home</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__top-strip z-index--1">
+      <div class="container">
+        <div class="main-header__top-strip__sub">  
+          <div class="elements--left">
+            <p class="m-0 text-white">
+              Welcome to <a href="javascript:;" class="color--inherit text-decoration-none"><strong>Website.com</strong></a>. &nbsp;
+              <strong class="text--primary">Get up to 20% OFF!</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-header__navbar">
+      <div class="container">
+        <div class="main-header__navbar__sub">
+          <div class="main-header__navbar__logo">
+            <a href="./">
+              <img src="./assets/images/logo.svg" alt="Company Logo" />
+            </a>
+          </div>
+          <nav class="main-header__navigation">
+            <ul class="main-header__navigation__menu">
+              <li class="main-header__navigation__menu__item">
+                <a class="main-header__navigation__menu__item__link" href="./my-trips.html">My Trips</a>
+              </li>
+              <li class="main-header__navigation__menu__item">
+                <a class="main-header__navigation__menu__item__link" href="./packages.html">Packages</a>
+              </li>
+              <li class="main-header__navigation__menu__item">
+                <a class="main-header__navigation__menu__item__link" href="./blog.html">Blog</a>
+              </li>
+              <li class="main-header__navigation__menu__item">
+                <a class="main-header__navigation__menu__item__link" href="./support.html">Support</a>
+              </li>
+            </ul>
+            <div class="info-clickable-buttons gap-2 mx-2">
+              <button type="button" class="info-clickable-buttons__button">
+                <i class="fa-regular fa-bell"></i>
+              </button>
+            </div>
+            <div class="tab-hamburger-menu d-none me-sm-2"><i class="fa-solid fa-bars pe-none"></i></div>
+          </nav>
+          <a href="#" class="btn btn-outline-dark hidden--xs px-4">Sign In</a>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu d-none show--mobile">
+      <div class="mobile-menu__close"><i class="fa-solid fa-arrow-left"></i></div>
+      <div class="info-clickable-buttons gap-2 mx-2">
+        <button type="button" class="info-clickable-buttons__button">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+      </div>
+      <div class="mobile-menu__body">
+        <div>
+          <div class="cta-buttons mb-4 flex-wrap d-flex gap-3">
+            <a href="#" class="btn btn-outline-light"><i class="fa-solid fa-user"></i> Sing In</a>
+          </div>
+          <ul class="mobile-menu__nav">
+            <li class="mobile-menu__nav__item">
+              <a class="mobile-menu__nav__item__link" href="./my-trips.html">My Trips</a>
+            </li>
+            <li class="mobile-menu__nav__item">
+              <a class="mobile-menu__nav__item__link" href="./packages.html">Packages</a>
+            </li>
+            <li class="mobile-menu__nav__item">
+              <a class="mobile-menu__nav__item__link" href="./blog.html">Blog</a>
+            </li>
+            <li class="mobile-menu__nav__item">
+              <a class="mobile-menu__nav__item__link" href="./support.html">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__footer">
+          <div class="social-media-container">
+            <h6 class="text-white text-uppercase mb-3">Stay Connected</h6>
+            <ul class="social-media-list">
+              <li class="social-media-list__item"><a class="social-media-list__item--link" href="javascript:;"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="social-media-list__item"><a class="social-media-list__item--link" href="javascript:;"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="social-media-list__item"><a class="social-media-list__item--link" href="javascript:;"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="social-media-list__item"><a class="social-media-list__item--link" href="javascript:;"><i class="fa-brands fa-youtube"></i></a></li>
+              <li class="social-media-list__item"><a class="social-media-list__item--link" href="javascript:;"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="package-details">
+    <div class="container">
+      <div class="package-details__gallery">
+        <!-- <span class="view-all show-gallery">05+ More</span> -->
+        <div class="package-details__gallery__item">
+          <img class="item-image" src="https://images.unsplash.com/photo-1547970810-dc1eac37d174" alt="Gallery Image" />
+        </div>
+        <div class="package-details__gallery__item">
+          <img class="item-image" src="https://images.unsplash.com/photo-1604614765191-02ea6bdb941b" alt="Gallery Image" />
+        </div>
+        <div class="package-details__gallery__item">
+          <img class="item-image" src="https://images.unsplash.com/photo-1507475752099-71ad8f98c9d2" alt="Gallery Image" />
+        </div>
+      </div>
+      <div class="package-details__content">
+        <div class="package-details__title">
+          <div class="block__left">
+            <h1 class="fw-bold mb-3 text-secondary">Explore South Africa</h1>
+            <h5 class="fw-semibold d-flex gap-3 align-items-center">
+              <i class="fa-solid fa-map-location text-secondary"></i> 
+              South Africa
+            </h5>
+          </div>
+          <div class="block__right d-flex align-items-center flex-wrap gap-3">
+            <ul class="package-duration">
+              <li><i class="fa-solid fa-sun"></i> 04 Days</li>
+              <li><i class="fa-solid fa-moon"></i> 03 Nights</li>
+            </ul>
+            <ul class="sharable">
+              <li><i class="fa-solid fa-share-alt"></i></li>
+              <li><i class="fa-regular fa-heart"></i></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="package-details__content__text">
+          <h4 class="my-3">About this Package</h4>
+          <p>
+            Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, dolores odit! Corrupti officiis eos fuga quasi molestias nihil et aperiam exercitationem accusantium officia, animi, eius sint earum maxime, facere error!
+          </p>
+          <p>
+            Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry.
+          </p>
+          <h5>Lorem Ipsum dolor sit amet</h5>
+          <ul>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas labore nulla dignissimos est recusandae!</li>
+            <li>Lorem, adipisicing elit. Consequuntur quas labore nulla dignissimos est recusandae!</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur dignissimos est recusandae!</li>
+            <li>Lorem, ipsum dolor sit adipisicing elit. nulla dignissimos est recusandae!</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. nulla dignissimos est recusandae!</li>
+          </ul>
+          <h4 class="mt-4 mb-3">This package includes:</h4>
+          <ul class="package-includes">
+            <li class="package-includes__item"><i class="fa-solid fa-plane"></i> Flights</li>
+            <li class="package-includes__item"><i class="fa-solid fa-hotel"></i> Hotel</li>
+            <li class="package-includes__item"><i class="fa-solid fa-car"></i> Transport</li>
+            <li class="package-includes__item"><i class="fa-solid fa-earth-asia"></i> Tours</li>
+            <li class="package-includes__item"><i class="fa-solid fa-utensils"></i> Breakfast</li>
+            <li class="package-includes__item"><i class="fa-solid fa-person-biking"></i> Activities</li>
+          </ul>
+        </div>
+        <div class="package-details__content__location">
+          <h4 class="my-3">Location</h4>
+          <div class="package-details__content__location__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.3540474877977!2d55.323862175998286!3d25.258672829206784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cda8ebc79f7%3A0x673eacccd1941b6b!2sDeira%20Clocktower!5e0!3m2!1sen!2sae!4v1686580717106!5m2!1sen!2sae" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="package-form-sec">
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-heading__content --center">
+          <h2 class="__heading text-secondary m-0">Book The Package</h2>
+        </div>
+      </div>
+      <div class="package-form">
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_name" class="form-label font-centra2--medium">Your Name</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-solid fa-user"></i></div>
+                <input type="email" class="form-control" id="user_name" placeholder="Enter full name" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_email" class="form-label font-centra2--medium">Email Id</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-solid fa-envelope"></i></div>
+                <input type="email" class="form-control" id="user_email" placeholder="Enter email Id" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_phone" class="form-label font-centra2--medium">Phone Number</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-solid fa-phone"></i></div>
+                <input type="email" class="form-control" id="user_phone" placeholder="Enter phone number" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_phone" class="form-label font-centra2--medium">Travel Date</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-regular fa-calendar"></i></div>
+                <input type="email" class="form-control" id="user_phone" placeholder="Enter Travel Date" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_phone" class="form-label font-centra2--medium">Duration</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-regular fa-clock"></i></div>
+                <input type="email" class="form-control" id="user_phone" placeholder="Enter Duration" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_phone" class="form-label font-centra2--medium">Adult(s)</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-solid fa-user"></i></div>
+                <input type="email" class="form-control" id="user_phone" placeholder="Enter Adults" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_phone" class="form-label font-centra2--medium">Child(s)</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-solid fa-child"></i></div>
+                <input type="email" class="form-control" id="user_phone" placeholder="Enter Childs" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_phone" class="form-label font-centra2--medium">Infant(s)</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-solid fa-baby-carriage"></i></div>
+                <input type="email" class="form-control" id="user_phone" placeholder="Enter Infants" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_phone" class="form-label font-centra2--medium">Nationality</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-solid fa-globe-asia"></i></div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>United Arab Emiartes</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_phone" class="form-label font-centra2--medium">Residence</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-solid fa-globe-asia"></i></div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>United Arab Emiartes</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_phone" class="form-label font-centra2--medium">Hotel Category</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-solid fa-globe-asia"></i></div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>-- Category --</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-block">
+              <label for="user_phone" class="form-label font-centra2--medium">Class of Travel</label>
+              <div class="input-block__input">
+                <div class="__icon"><i class="fa-solid fa-globe-asia"></i></div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>-- Class --</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-block">
+              <label for="user_message" class="form-label font-centra2--medium">Your Message</label>
+              <div class="input-block__input height-auto">
+                <div class="__icon"><i class="fa-solid fa-message"></i></div>
+                <textarea class="form-control" id="user_message" rows="5" placeholder="Enter your message/query"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-secondary btn-hover--primary btn-inline btn-lg shadow submit-button mt-4">Submit</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-sec">
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-heading__content --center">
+          <h2 class="__heading m-0">Testimonials</h2>
+        </div>
+      </div>
+      <div class="testimonial-sec__container testimonial-card-slider">
+        <div class="testimonial-card-slider__slide">
+          <div class="testimonial-card">
+            <span class="quote-icon"><i class="fa-solid fa-quote-left"></i></span>
+            <div class="testimonial-card__content">
+              <p class="m-0">Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada leo cras odio blandit rhoncus eues feugiat.</p>
+            </div>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__author__image">
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d" alt="User Profile" />
+              </div>
+              <div class="text-center">
+                <h5 class="fw-bold text-secondary">James Dowd</h5>
+                <small class="d-block m-0">Creative Director</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card-slider__slide">
+          <div class="testimonial-card">
+            <span class="quote-icon"><i class="fa-solid fa-quote-left"></i></span>
+            <div class="testimonial-card__content">
+              <p class="m-0">Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada leo cras odio blandit rhoncus eues feugiat.</p>
+            </div>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__author__image">
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d" alt="User Profile" />
+              </div>
+              <div class="text-center">
+                <h5 class="fw-bold text-secondary">James Dowd</h5>
+                <small class="d-block m-0">Creative Director</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card-slider__slide">
+          <div class="testimonial-card">
+            <span class="quote-icon"><i class="fa-solid fa-quote-left"></i></span>
+            <div class="testimonial-card__content">
+              <p class="m-0">Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada leo cras odio blandit rhoncus eues feugiat.</p>
+            </div>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__author__image">
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d" alt="User Profile" />
+              </div>
+              <div class="text-center">
+                <h5 class="fw-bold text-secondary">James Dowd</h5>
+                <small class="d-block m-0">Creative Director</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="main-footer-logo d-flex justify-content-center border-bottom mb-4 pb-3">
+        <a href="/." class="text-uppercase fw-bold text-decoration-none text--inherit d-inline-flex flex-column">
+          <img src="./assets/images/logo.svg" alt="Footer Logo" class="mb-2" />
+          <small class="">Tag Line goes here</small>
+        </a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-5 col-lg-3 col-xl-2">
+          <div class="main-footer__content">
+            <h6 class="__heading mb-3 fw-bold">Company</h6>
+            <ul class="main-footer__content__links">
+              <li class="main-footer__content__links__item"><a href="javascript:;">About</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Jobs</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">List your property</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Partnerships</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Investor Relations</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Advertising</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 col-xl-4">
+          <div class="main-footer__content">
+            <h6 class="__heading mb-3 fw-bold">Explore</h6>
+            <ul class="main-footer__content__links">
+              <li class="main-footer__content__links__item"><a href="javascript:;">United States of America travel guide</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Hotels in United States of America</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Vacation rentals in United States of America</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Vacation packages in United States of America</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Domestic flights</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Car rentals in United States of America</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">All accommodation types</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-3 col-xl-3">
+          <div class="main-footer__content">
+            <h6 class="__heading mb-3 fw-bold">Policies</h6>
+            <ul class="main-footer__content__links">
+              <li class="main-footer__content__links__item"><a href="javascript:;">Privacy</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Terms of use</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Terms and conditions</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Accessibility</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Your Privacy Choices</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 col-lg-12 col-xl-3">
+          <div class="main-footer__content">
+            <h6 class="__heading mb-3 fw-bold">Help!</h6>
+            <ul class="main-footer__content__links">
+              <li class="main-footer__content__links__item"><a href="javascript:;">Support</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Cancel your hotel or vacation rental booking</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Cancel your flight</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Refund timelines, policies & processes</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">Use an Expedia coupon</a></li>
+              <li class="main-footer__content__links__item"><a href="javascript:;">International travel documents</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights">
+        <div class="copyrights__links">
+          <p class="m-0">Copyright © Portal name. All Rights Reserved</p>
+          <span class="opacity-50">&nbsp;|&nbsp;</span>
+          <a href="#">Privacy Policy</a>
+          <span class="opacity-50">&nbsp;|&nbsp;</span>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="payment-methods">
+          <img src="./assets/images/payment-methods.svg" alt="Payment Method Icons" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section class="gallery-overlay-sec" style="display: none;">
+    <div class="gallery-overlay-sec__sub">
+      <div class="close-button"><i class="fa-solid fa-times"></i></div>
+      <div class="gallery-image-container">
+        <img src="" class="gallery-overlay-image" alt="Gallery Image" />
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.js" defer></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@easepick/datetime@1.2.1/dist/index.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@easepick/core@1.2.1/dist/index.umd.min.js"></script>
+  <script type="text/javascript"src="./assets/js/custom.js"></script>
+</body>
+</html>

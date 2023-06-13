@@ -45,6 +45,19 @@
     }
   }
 }
+b, strong {
+  font-family: var(--font-centra2-medium);
+  font-weight: initial;
+}
+
+.fw {
+  &-normal { font-family: var(--font-centra2); font-weight: normal !important; }
+  &-light { font-family: var(--font-centra2-light); font-weight: normal !important; }
+  &-lighter { font-family: var(--font-centra2-thin); font-weight: normal !important; }
+  &-semibold { font-family: var(--font-centra2-medium); font-weight: normal !important; }
+  &-bold { font-family: var(--font-centra2-bold); font-weight: normal !important; }
+  &-bolder { font-family: var(--font-centra2-extrabold); font-weight: normal !important; }
+}
 
 .btn {
   // --bs-btn-padding-x: 1.15rem;
@@ -87,7 +100,7 @@
   white-space: nowrap;
   transition: var(--bs-transition);
   flex-shrink: 0;
-  font-weight: 500;
+  font-family: var(--font-centra2-medium) !important;
   
   &-square {
     height: calc(var(--top-strip-height) / 1.5);
