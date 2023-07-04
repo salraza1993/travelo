@@ -39,8 +39,8 @@ if (window_width <= 767) {
 }
 
 // ============= [ Home Slider ] ============= //
-const homeSliderArrow_left = document.querySelector('.slider-arrows__button--left');
-const homeSliderArrow_right = document.querySelector('.slider-arrows__button--right');
+const homeSliderArrow_left = document?.querySelector('.slider-arrows__button--left');
+const homeSliderArrow_right = document?.querySelector('.slider-arrows__button--right');
 $(document).ready(function () {
   $('.home-slider').slick({
     infinite: true,
@@ -184,7 +184,7 @@ function showGalleryImage(item) {
 
 }
 galleryItems?.forEach(item => showGalleryImage(item));
-galleryImageContainer.addEventListener('click', e => e.stopImmediatePropagation());
+galleryImageContainer?.addEventListener('click', e => e.stopImmediatePropagation());
 
 // ========= [ Hide Gallery ] ========= //
 function hideGalleryImage() {
@@ -193,4 +193,4 @@ function hideGalleryImage() {
 }
 
 hideGalleryButton?.addEventListener('click', e => hideGalleryImage());
-galleryOverlay.addEventListener('click', e => hideGalleryImage());
+galleryOverlay?.addEventListener('click', e => hideGalleryImage());

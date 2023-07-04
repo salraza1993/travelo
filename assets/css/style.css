@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("./../fonts/fonts.css");
+@import url("./../../assets/fonts/fonts.css");
 :root {
   --bs-bg-color: #FFFFFF;
   --bs-primary: #88FF99;
@@ -523,6 +523,32 @@ b, strong {
 }
 .btn-secondary:is(.shadow) {
   box-shadow: 0 10px 20px -10px rgba(var(--bs-secondary-rgb), 0.5) !important;
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-bg: var(--bs-transparent);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-border-width: 1px;
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-shadow-color: var(--bs-primary-rgb);
+}
+.btn-outline-secondary {
+  --bs-btn-color: var(--bs-secondary);
+  --bs-btn-bg: var(--bs-transparent);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: var(--bs-secondary);
+  --bs-btn-border-width: 1px;
+  --bs-btn-border-color: var(--bs-secondary);
+  --bs-btn-shadow-color: var(--bs-secondary-rgb);
+}
+.btn-outline-gray {
+  --bs-btn-color: var(--bs-gray-800);
+  --bs-btn-bg: var(--bs-transparent);
+  --bs-btn-hover-color: var(--bs-bg-color);
+  --bs-btn-hover-bg: var(--bs-dark);
+  --bs-btn-border-width: 1px;
+  --bs-btn-border-color: var(--bs-gray-600);
 }
 .btn-transparent {
   --bs-btn-bg: var(--bs-transparent);
@@ -1051,7 +1077,7 @@ h6 {
 .main-footer {
   position: relative;
   background-color: var(--bs-white);
-  padding-block: calc(1.5rem + 2.5vw) 0;
+  padding-block: calc(1.5rem + 1vw) calc(0.5rem + 0.5vw);
   width: 100%;
   isolation: isolate;
   color: var(--bs-dark);
@@ -3352,7 +3378,7 @@ h6 {
   color: var(--bs-white);
   gap: calc(1.5rem + 1vw);
   isolation: isolate;
-  background-image: linear-gradient(135deg, var(--bs-secondary--dark) 60%, var(--bs-primary)), url("./../images/newsletter-bg.jpg");
+  background-image: linear-gradient(135deg, var(--bs-secondary--dark) 60%, var(--bs-primary)), url("");
   background-blend-mode: color, multiply;
 }
 .newsletter-sec__container::before, .newsletter-sec__container::after {
@@ -3698,7 +3724,7 @@ h6 {
   position: relative;
 }
 .mission-vision-sec__container {
-  --minus-margin: 150px;
+  --minus-margin: 0px;
   --block-icon-size: 125px;
   position: relative;
   margin-top: calc(0px - var(--minus-margin));
@@ -4169,6 +4195,12 @@ h6 {
 .blog-page-sec .blog-card__content .__heading a:hover, .blog-page-sec .blog-short-card__content .__heading a:hover {
   color: var(--bs-secondary);
   text-decoration: underline;
+}
+.blog-page-sec .blog-card__content .__text, .blog-page-sec .blog-short-card__content .__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .blog-page-sec .blog-card__content__footer, .blog-page-sec .blog-short-card__content__footer {
   position: relative;

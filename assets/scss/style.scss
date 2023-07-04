@@ -1,4 +1,4 @@
-@import url('./../fonts/fonts.css');
+@import url('./../../assets/fonts/fonts.css');
 @import './base/variables';
 @import './base/mixins';
 @import './base/classes';
@@ -30,39 +30,27 @@ img, svg, video { max-width: 100%; display: block; }
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-centra2-bold); }
 h1 { 
   font-size: var(--fs--1); 
-  @media (width <= $media-screen--sm) {
-    font-size: var(--fs--3);    
-  }
+  @media (width <= $media-screen--sm) { font-size: var(--fs--3); }
 }
 h2 { 
   font-size: var(--fs--2); 
-  @media (width <= $media-screen--sm) {
-    font-size: var(--fs--4);    
-  }
+  @media (width <= $media-screen--sm) { font-size: var(--fs--4); }
 }
 h3 { 
   font-size: var(--fs--3); 
-  @media (width <= $media-screen--sm) {
-    font-size: var(--fs--5);    
-  }
+  @media (width <= $media-screen--sm) { font-size: var(--fs--5); }
 }
 h4 { 
   font-size: var(--fs--4); 
-  @media (width <=$media-screen--sm) {
-    font-size: var(--fs--5);
-  }
+  @media (width <=$media-screen--sm) { font-size: var(--fs--5);}
 }
 h5 { 
   font-size: var(--fs--5); 
-  @media (width <= $media-screen--sm) {
-    font-size: var(--fs--6);    
-  }
+  @media (width <= $media-screen--sm) { font-size: var(--fs--6); }
 }
 h6 { 
   font-size: var(--fs--6); 
-  @media (width <= $media-screen--sm) {
-    font-size: var(--fs--6);    
-  }
+  @media (width <= $media-screen--sm) { font-size: var(--fs--6); }
 }
 
 /* =============== [ Header ] =============== */ 
@@ -311,7 +299,7 @@ h6 {
 .main-footer {
   position: relative;
   background-color: var(--bs-white);
-  padding-block: calc(1.5rem + 2.5vw) 0;
+  padding-block: calc(1.5rem + 1vw) calc(0.5rem + 0.5vw);
   width: 100%;
   isolation: isolate;
   color: var(--bs-dark);
@@ -2296,7 +2284,8 @@ h6 {
 .newsletter-sec {
   --container-max-width: var(--max-width-vw);
   --content-max-width: 100%;
-  $imageUrl: './../images/newsletter-bg.jpg';
+  // $imageUrl: './../images/newsletter-bg.jpg';
+  $imageUrl: '';
   padding-block: calc(1.25rem + 1vw);
   position: relative;
   &__container {
@@ -2613,7 +2602,7 @@ h6 {
 .mission-vision-sec {
   position: relative;
   &__container {
-    --minus-margin: 150px;
+    --minus-margin: 0px;
     --block-icon-size: 125px;
     position: relative;
     margin-top: calc(0px - var(--minus-margin));
@@ -2996,6 +2985,9 @@ h6 {
             text-decoration: underline;
           }
         }
+      }
+      .__text {
+        @include multiline();
       }
       &__footer {
         position: relative;
