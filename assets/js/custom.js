@@ -9,9 +9,9 @@ let window_width = window.innerWidth;
 // ============ [ Show dropdown menu in tablet view ] ============ //
 const tabMenuHandler = event => {
   event.preventDefault();
-  event.target.classList.toggle('active');  
+  event.target.classList.toggle('active');
   navigationMenu.classList.toggle('opened');
-}
+};
 
 // ============ [ Show dropdown menu in mobile view ] ============ //
 const mobileMenuHandler = event => {
@@ -19,23 +19,23 @@ const mobileMenuHandler = event => {
   event.target.classList.add('active');
   mobileMenu.classList.add('opened');
   mainBody.classList.add('no-scroll');
-}
+};
 const closeMobileMenuHandler = event => {
   event.preventDefault();
   tabHamburgerMenu.classList.remove('active');
   mobileMenu.classList.remove('opened');
   mainBody.classList.remove('no-scroll');
-}
+};
 
 if (window_width >= 768 && window_width <= 992) {
-  tabHamburgerMenu.addEventListener('click', event => tabMenuHandler(event))
-  tabHamburgerMenu.addEventListener('resize', event => tabMenuHandler(event))
+  tabHamburgerMenu.addEventListener('click', event => tabMenuHandler(event));
+  tabHamburgerMenu.addEventListener('resize', event => tabMenuHandler(event));
 }
-if (window_width <= 767) { 
-  tabHamburgerMenu.addEventListener('click', event => mobileMenuHandler(event))
-  closeMobileMenuButton.addEventListener('click', event => closeMobileMenuHandler(event))
-  tabHamburgerMenu.addEventListener('resize', event => mobileMenuHandler(event))
-  closeMobileMenuButton.addEventListener('resize', event => closeMobileMenuHandler(event))
+if (window_width <= 767) {
+  tabHamburgerMenu.addEventListener('click', event => mobileMenuHandler(event));
+  closeMobileMenuButton.addEventListener('click', event => closeMobileMenuHandler(event));
+  tabHamburgerMenu.addEventListener('resize', event => mobileMenuHandler(event));
+  closeMobileMenuButton.addEventListener('resize', event => closeMobileMenuHandler(event));
 }
 
 // ============= [ Home Slider ] ============= //
@@ -115,7 +115,7 @@ dropdownBlockButton.forEach(button => {
     let this_item_parent = elem.target.closest('.dropdown-block');
     if (!this_item_parent.classList.contains('active')) elem.stopPropagation();
     closeAllDropdownBlocks();
-    openThisDropdownBlock(elem)    
+    openThisDropdownBlock(elem);
   });
 });
 // disabling all dropdowns
@@ -131,13 +131,13 @@ searchTabItems?.forEach(item => {
     e.preventDefault();
     let thisItem = e.target;
     let thisItemId = thisItem.id;
-    
-    searchTabItems.forEach(tabData => tabData.classList.remove('current'))
-    searchTabData.forEach(tabItem => tabItem.classList.remove('current'))
+
+    searchTabItems.forEach(tabData => tabData.classList.remove('current'));
+    searchTabData.forEach(tabItem => tabItem.classList.remove('current'));
     let itemData_found = searchTab.querySelector(`#data-${thisItemId}`);
     thisItem.classList.add('current');
-    itemData_found.classList.add('current');    
-  }, false)
+    itemData_found.classList.add('current');
+  });
 });
 
 // document.addEventListener("DOMContentLoaded", function () {
@@ -148,7 +148,7 @@ searchTabItems?.forEach(item => {
 //     ],
 //     zIndex: 10
 //   });
-// }, false);
+// });
 
 // ============ [ flight tabs ] ============ //
 const flightTabsContainer = document.querySelector('.flight-tabs');
@@ -163,7 +163,7 @@ flightTabs?.forEach(flightTab => {
     const flightTab_data = flightTabsContainer.querySelector(`#data-${thisItem_id}`);
     event.target.classList.add('active');
     flightTab_data.classList.add('selected');
-  }, false);
+  });
 });
 
 
@@ -180,7 +180,7 @@ function showGalleryImage(item) {
     let this_item_img = elem.target.querySelector('img').getAttribute('src');
     galleryImageContainer.setAttribute('src', this_item_img);
     galleryOverlay.style.display = 'block';
-  }, false);
+  });
 
 }
 galleryItems?.forEach(item => showGalleryImage(item));
@@ -194,3 +194,36 @@ function hideGalleryImage() {
 
 hideGalleryButton?.addEventListener('click', e => hideGalleryImage());
 galleryOverlay?.addEventListener('click', e => hideGalleryImage());
+
+document.addEventListener("DOMContentLoaded", function () {
+  const departure = new Litepicker({
+    element: document.getElementById('departingOn'),
+    numberOfColumns: 2,
+    numberOfMonths: 2,
+    plugins: ['mobilefriendly']
+  });
+  const departureOneWay = new Litepicker({
+    element: document.getElementById('departureOneWay'),
+    numberOfColumns: 2,
+    numberOfMonths: 2,
+    plugins: ['mobilefriendly']
+  });
+  const departureMultiCity = new Litepicker({
+    element: document.getElementById('departureMultiCity'),
+    numberOfColumns: 2,
+    numberOfMonths: 2,
+    plugins: ['mobilefriendly']
+  });
+  const departureMultiCity2 = new Litepicker({
+    element: document.getElementById('departureMultiCity2'),
+    numberOfColumns: 2,
+    numberOfMonths: 2,
+    plugins: ['mobilefriendly']
+  });
+  const arrival = new Litepicker({
+    element: document.getElementById('arrivalOn'),
+    numberOfColumns: 2,
+    numberOfMonths: 2,
+    plugins: ['mobilefriendly']
+  });
+});
